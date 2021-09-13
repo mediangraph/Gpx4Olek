@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gpx creator="mapy.cz" version="1.1" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<trk><name></name>
+    <trkseg>
+        <trkpt lat="50.45317031443119" lon="19.51680287718773"><ele>395</ele><time>2021-09-11T08:57:16</time><name>WP 001</name></trkpt>
+        <trkpt lat="50.45320384204388" lon="19.516467601060867"><ele>395</ele><time>2021-09-11T08:57:26</time><name>WP 002</name></trkpt>
+        <trkpt lat="50.45324809849262" lon="19.516049176454544"><ele>395</ele><time>2021-09-11T08:57:35</time><name>WP 003</name></trkpt>
+        <trkpt lat="50.45328497886658" lon="19.515666961669922"><ele>392</ele><time>2021-09-11T08:57:56</time><name>WP 004</name></trkpt>      
+    </trkseg>
+    </trk>
+</gpx>
