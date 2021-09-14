@@ -14,7 +14,7 @@
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <PublishUrl>D:\Repo\VS\GpxEditor\Gpx4Olek\Installers\</PublishUrl>
+    <PublishUrl>D:\Repo\VS\GpxEditor\Gpx4Olek\Instals\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>

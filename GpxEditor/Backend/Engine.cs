@@ -17,7 +17,7 @@ namespace GpxEditor.Backend
         {
             try
             {
-                var gpx = GetGpxFile(filePath, outputPath).GetAwaiter().GetResult();
+                var gpx = GetGpxFile(filePath, outputPath);
                 StripXml.RemoveUnnecessaryTags(gpx);
 
                 Message = new ConsoleMessage()
@@ -60,7 +60,7 @@ namespace GpxEditor.Backend
             }
         }
 
-        private async Task<GpxFile> GetGpxFile(string pathToFile, string outputPath)
+        private GpxFile GetGpxFile(string pathToFile, string outputPath)
         {
             if (File.Exists(pathToFile) && Path.GetExtension(pathToFile) == ".gpx")
             {

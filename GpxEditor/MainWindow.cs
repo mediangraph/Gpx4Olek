@@ -37,7 +37,7 @@ namespace GpxEditor
 
         private async Task EditFileInEngine(string path, string outGpxDir)
         {
-            await Task.Run(async () =>
+            await Task.Run(() =>
             {
                 _engine.EditGpxFile(path, Path.Combine(outGpxDir, Path.GetFileName(path)));
             });
