@@ -29,13 +29,18 @@ namespace GpxEditor
             {
                 foreach (var path in Directory.EnumerateFiles(gpxDir).Where(x => Path.GetExtension(x) == ".gpx"))
                 {
-                   var t = Task.Run( () =>
-                   {
-                       _engine.EditGpxFile(path, Path.Combine(outGpxDir, Path.GetFileName(path)));
-                       UpdateConsole(_engine.Message);
-                   });
+                   await EditFileInEngine(path, outGpxDir).ConfigureAwait(false);
+                   UpdateConsole(_engine.Message);
                 }
             }
+        }
+
+        private async Task EditFileInEngine(string path, string outGpxDir)
+        {
+            await Task.Run(async () =>
+            {
+                _engine.EditGpxFile(path, Path.Combine(outGpxDir, Path.GetFileName(path)));
+            });
         }
 
         private void UpdateConsole(ConsoleMessage msg)
